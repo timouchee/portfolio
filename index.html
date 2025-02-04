@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - [Votre Nom]</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Timéo Juliard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- En-tête avec navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Section Accueil -->
-  <section id="accueil">
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Je suis [Votre Nom], programmeur passionné et toujours curieux de nouvelles technologies.</p>
-  </section>
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="hero">
+            <img src="moi.png" alt="Timéo Juliard">
+            <h1>Timéo Juliard</h1>
+            <p>Étudiant en BUT Informatique, alternant chez Telerad, passionné de développement.</p>
+        </div>
+    </section>
+    <div claass="equart"></div>
+    <!-- Section À propos et compétences -->
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <div class="skills">
+            <div class="skill-block">
+                <h3>Langages</h3>
+                <p>Python, C++, C, HTML/CSS, JavaScript</p>
+            </div>
+            <div class="skill-block">
+                <h3>Frameworks</h3>
+                <p>Django, Laravel, MongoDB, MySQL</p>
+            </div>
+            <div class="skill-block">
+                <h3>Langues</h3>
+                <p>Français (natif), Anglais (B1 - TOEIC)</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Section À propos -->
-  <section id="apropos">
-    <h2>À propos de moi</h2>
-    <p>Quelques informations sur mon parcours et mes compétences :</p>
-    <ul>
-      <li>Langages : HTML, CSS, JavaScript, etc.</li>
-      <li>Frameworks : React, Angular, Vue, etc.</li>
-      <li>Outils : Git, Docker, etc.</li>
-    </ul>
-  </section>
+    <!-- Section Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="grid">
+            <div class="project-card">
+                <img src="placeholder.png" alt="Projet 1">
+                <h3>Projet 1</h3>
+                <p>Développement d'un site de paramétrage de radio (C, React, Redux)</p>
+            </div>
+            <div class="project-card">
+                <img src="placeholder.png" alt="Projet 2">
+                <h3>Projet 2</h3>
+                <p>Site vitrine avec Django et mise en place de backups</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Section Projets -->
-  <section id="projets">
-    <h2>Mes Projets</h2>
-    <div class="projet">
-      <h3>Projet 1</h3>
-      <p>Description du projet 1. Explique les technologies utilisées et les défis relevés.</p>
-    </div>
-    <div class="projet">
-      <h3>Projet 2</h3>
-      <p>Description du projet 2. Tu peux ajouter des liens vers des démonstrations ou des dépôts GitHub.</p>
-    </div>
-    <!-- Ajoute autant de projets que nécessaire -->
-  </section>
+    <!-- Section Contact -->
+    <section id="contact">
+        
+    </section>
 
-  <!-- Section Contact -->
-  <section id="contact">
-    <h2>Contactez-moi</h2>
-    <p>Vous pouvez me joindre par email à <a href="mailto:email@example.com">email@example.com</a> ou via mes réseaux sociaux.</p>
-  </section>
-
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2025 [Votre Nom]. Tous droits réservés.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Timéo Juliard. Tous droits réservés.</p>
+        <h2>Contactez-moi</h2>
+        <p>Email: <a href="mailto:timeo971@gmail.com">timeo971@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/Timéo JULIARD/" target="_blank">Timéo Juliard</a></p>
+        <p>Discord: timouche.</p>
+    </footer>
 </body>
 </html>

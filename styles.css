@@ -1,71 +1,70 @@
-/* Réinitialisation des marges et paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Style global du body */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* En-tête et navigation */
-  header {
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav ul li {
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sections principales */
-  section {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-  } 
-  
-  /* Titres */
-  h1, h2, h3 {
-    margin-bottom: 15px;
-  }
-  
-  /* Bloc projet */
-  .projet {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  /* Pied de page */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Orbitron', sans-serif;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  background-color: #1E1E1E;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: #BB86FC;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.skill-block {
+  background-color: #1E1E1E;
+  padding: 15px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.skill-block:hover {
+  box-shadow: 0 0 10px #BB86FC;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.project-card {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: 0 0 15px #03DAC6;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1E1E1E;
+}
+
+section
+{
+  margin: 250px 0;
+}
