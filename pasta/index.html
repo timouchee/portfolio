@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de [Votre Nom]</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="moi.png" alt="Ram Maheshwari Logo Image" class="header__logo-img">
+        </div>
+        <span class="header__logo-sub">Juliard Timéo</span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#home" class="header__nav-link">Accueil</a></li>
+          <li class="header__nav-item"><a href="#about" class="header__nav-link">À propos</a></li>
+          <li class="header__nav-item"><a href="#projects" class="header__nav-link">Projets</a></li>
+          <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__toggle">
+        <span class="header__toggle-icon"></span>
+      </div>
+    </div>
+  </header>
+  <div class="main_content">
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, je suis Juliard Timéo</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Je suis étudiant en 3em année à l'IUT de bayonne et du pays basque.je suis développeur full-stack avec une
+            formation
+            orienter gestion de projet.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="#projects" class="btn btn--bg">Projets</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://linkedin.com/in/rammcodes" class="home-hero__social-icon-link" rel="noreferrer"
+            target="_blank">
+            <img src="linkedin-dark.svg" alt="Ram Maheshwari Linkedin Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://twitter.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="twitter-dark.svg" alt="RammCodes Twitter Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
+            <img src="yt-dark.svg" alt="RammCodes Youtube Channel" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="github-dark.svg" alt="RammCodes Github Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+
+        <div class="home-hero__social">
+          <a href="https://dev.to/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="book-dark.svg" alt="RammCodes DEV.to Blog Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container_about">
+        <!-- <h2 class="section__title">À propos de moi</h2>
+        <p class="section__subtitle">
+          Vous trouverez ici plus d'informations sur moi, ce que je fais et mes compétences actuelles en matière de
+          programmation et de technologie.
+        </p> -->
+        <div class="about__content">
+          <div class="about__description">
+            <h3>Faites connaissance avec moi !</h3>
+            <p>
+              Je suis un développeur full-stack axé sur le Frontend, créant et gérant l'interface utilisateur de sites
+              web et d'applications web qui contribuent au succès global du produit.J'ai néamoins des projet et 
+              aptitude me permettant de prendre en charge le back-end d'un projet tous en participant activement 
+              à la gestion du projet Consultez certains de mes travaux dans la section Projets.
+            </p>
+            <p>
+              J'aime également partager du contenu lié à ce que j'ai appris au fil des ans en développement web, afin
+              d'aider d'autres collegues développeurs. N'hésitez pas à me contacter ou à me suivre
+              sur mes réseaux sociaux pour obtenir des renseignement plus personalisé, je suis particulièrement actif sur discord.
+            </p>
+            <p>
+              Je suis ouvert aux opportunités d'emploi où je peux contribuer, apprendre et grandir.Néamoins je
+              recherche actuelement une alternance pour l'année 2025. Si vous avez une bonne opportunité qui 
+              correspond à mes compétences et à mon expérience ou la moindre, n'hésitez pas à me contacter.
+            </p>
+          </div>
+          <div class="about__skills">
+            <h3>Mes compétences</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item">HTML</li>
+              <li class="skills__list-item">CSS</li>
+              <li class="skills__list-item">C</li>
+              <li class="skills__list-item">C++</li>
+              <li class="skills__list-item">JavaScript</li>
+              <li class="skills__list-item">TypeScript</li>
+              <li class="skills__list-item">React</li>
+              <li class="skills__list-item">Redux</li>
+              <li class="skills__list-item">MySQL</li>
+              <li class="skills__list-item">MongoDB</li>
+              <li class="skills__list-item">node</li>
+              <li class="skills__list-item">deno</li>
+              <li class="skills__list-item">fresh</li>
+              <li class="skills__list-item">django</li>
+              <li class="skills__list-item">WordPress</li>
+              <li class="skills__list-item">PHP</li>
+              <li class="skills__list-item">Laravel</li>
+              <li class="skills__list-item">GIT</li>
+              <li class="skills__list-item">GitHub</li>
+              <li class="skills__list-item">Java</li>
+              <li class="skills__list-item">docker</li>
+              <li class="skills__list-item">Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- composant timeline -->
+    <div class="timeline-container">
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>obtention du bacalauréat</h3>
+          <p>Juin 2022 - obtention du diplome français du bacalauréat.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>Début du BUT Info</h3>
+          <p>Septembre 2022 - Début de ma formation en BUT Informatique.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>mission freelance Axeom</h3>
+          <p>Août 2023 - mission de 1 mois sur un module de gestion d'intervention.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>Projet scolaire BonPlan&Co</h3>
+          <p>Septembre 2023 - travail en groupe sur une application web de tourisme.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>Stage Fast-Mage</h3>
+          <p>Mars 2024 - stage de 10 semaines chez Fast-Mage, herbergeur web.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>mission freelance Aegix</h3>
+          <p>Juillet 2024 - mission de 1 mois, création d'un site vitrine du design au deploiement.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>Alternance Terlerad</h3>
+          <p>Septembre 2024 - Alternance de 1 ans chez Telerad, service informatique.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title_center">Bienvenue dans mon univers de projets !</h2>
+
+    <div class="container_projet_category ">
+      <div class="project-category project-pro" onclick="handleClick(this,1)">
+        <div class="category-title">📂 Projets Professionnels</div>
+        <div class="category-description">
+          Découvrez les travaux que j’ai réalisés dans un cadre professionnel, incluant mes stages et expériences
+          réelles.
+        </div>
+      </div>
+
+      <div class="project-category project-perso " onclick="handleClick(this,2)">
+        <div class="category-title">🎮 Projets Personnels</div>
+        <div class="category-description">
+          Voici les projets que j’ai développés par passion, allant des jeux vidéo aux applications expérimentales.
+        </div>
+      </div>
+
+      <div class="project-category project-school" onclick="handleClick(this,3)">
+        <div class="category-title">📚 Projets Scolaires</div>
+        <div class="category-description">
+          Une collection des travaux et projets réalisés durant mon parcours académique, souvent en lien avec mes
+          études.
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- les 3 carrouselle -->
+    <section id="section_carrousel_1">
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" checked />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <main id="carousel">
+        <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Sally Sharpe</h3>
+          <p class="occupation">Marketing Admin</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, suscipit?</p>
+        </div>
+        <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Michael John</h3>
+          <p class="occupation">Cybersecurity Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolore.</p>
+        </div>
+        <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Mikayla Eddie</h3>
+          <p class="occupation">Software Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus?</p>
+        </div>
+        <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Eve Smith</h3>
+          <p class="occupation">UI/UX Designer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae?</p>
+        </div>
+        <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Luke Maxwell</h3>
+          <p class="occupation">System Architect</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+        </div>
+      </main>
+    </section>
+    <br>
+    <section id="section_carrousel_2">
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" checked />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <main id="carousel">
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Sally Sharpe</h3>
+          <p class="occupation">Marketing Admin</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, suscipit?</p>
+        </div>
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Michael John</h3>
+          <p class="occupation">Cybersecurity Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolore.</p>
+        </div>
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Mikayla Eddie</h3>
+          <p class="occupation">Software Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus?</p>
+        </div>
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Eve Smith</h3>
+          <p class="occupation">UI/UX Designer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae?</p>
+        </div>
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Luke Maxwell</h3>
+          <p class="occupation">System Architect</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+        </div>
+      </main>
+    </section>
+    <br>
+    <section id="section_carrousel_3">
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" checked />
+      <input type="radio" name="position" />
+      <input type="radio" name="position" />
+      <main id="carousel">
+        <div class="item">
+          <img src="wankil.jpg">
+          <h3 class="name">Sally Sharpe</h3>
+          <p class="occupation">Marketing Admin</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, suscipit?</p>
+        </div>
+        <div class="item">
+          <img src="wankil.jpg">
+          <h3 class="name">Michael John</h3>
+          <p class="occupation">Cybersecurity Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolore.</p>
+        </div>
+        <div class="item">
+          <img src="wankil.jpg">
+          <h3 class="name">Mikayla Eddie</h3>
+          <p class="occupation">Software Engineer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus?</p>
+        </div>
+        <div class="item">
+          <img src="wankil.jpg">
+          <h3 class="name">Eve Smith</h3>
+          <p class="occupation">UI/UX Designer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae?</p>
+        </div>
+        <div class="item">
+          <img src="wankil.jpg">
+          <h3 class="name">Luke Maxwell</h3>
+          <p class="occupation">System Architect</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+        </div>
+      </main>
+    </section>
+    <br>
+
+    <div>
+      <h2>Entreprtise</h2>
+      <button class="toggle-button" data-target="projet_gestion_intervention">projet_gestion_intervention</button>
+      <button class="toggle-button" data-target="projet_alternance_terlard">projet_alternance_terlard</button>
+      <button class="toggle-button" data-target="projet_freelance_aegix">projet_freelance_aegix</button>
+      <button class="toggle-button" data-target="projet_stage_fastmage">projet_stage_fastmage</button>
+      
+    </div>
+    <div>
+      <h2>Perso</h2>
+      <button class="toggle-button" data-target="projet_jeu_007">projet_jeu_007</button>
+      <button class="toggle-button" data-target="projet_jeu_007_v2">projet_jeu_007_v2</button>
+    </div>
+
+
+    <!-- ========== les div projet ========== -->
+    
+     <!-- projet alternance  -->
+    <div class="project-card" id="projet_alternance_terlard">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Alternance Terlard</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Retour sur mon alternance durant ma dernière année de BUT informatique à Anglet.</p>
+        <p>J'ai dû chercher une alternance ou me résoudre à faire un stage. Ayant trouvé une alternance, voici un état des lieux de son déroulement.</p>
+        
+        <p>Les premières missions qui m’ont été confiées incluaient une formation aux technologies que j’allais utiliser : React, Redux et Tailwind CSS. J'ai également eu une journée pour lire la documentation des machines et explorer le code existant.</p>
+    
+        <p>Mon travail principal a concerné un projet de gestion de radio. Il s'agissait de reprendre le travail d’un autre développeur qui avait conçu un site permettant de gérer une radio, mais sans backend réel, tout passant par un fichier JSON. Mon rôle a été d'ajouter des fonctionnalités et de faire en sorte que les requêtes ne passent plus par ce fichier JSON, mais directement par des demandes envoyées à la radio (extraction des infos de configuration, requêtes de reboot, etc.).</p>
+    
+        <p>Le projet principal est maintenant en grande partie terminé et je suis confiant pour la suite.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage de React, Redux et Tailwind CSS <br>
+          - Lecture et compréhension de code existant <br>
+          - Gestion de version avec GitHub <br>
+          - Développement de fonctionnalités backend pour la radio
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Matériel : PC et équipement radio
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet gestion d'intervention -->
+    <div class="project-card" id="projet_gestion_intervention">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Projet Client - Gestion d'Intervention</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Développement d’un site web de gestion d’interventions pour l’entreprise Aegix.</p>
+        
+        <p>Pendant les vacances de juillet et août, l’entreprise Aegix m’a contacté pour effectuer un stage d’un mois au sein de son service informatique. Ma mission était de créer un gestionnaire d’intervention en HTML, CSS, JavaScript et principalement PHP, tout en intégrant une base de données et en utilisant des requêtes AJAX.</p>
+    
+        <p>Avant de commencer, j’ai dû me former sur les bases du PHP et comprendre comment envoyer des requêtes sans recharger la page grâce à AJAX. Après quelques difficultés initiales, j’ai réussi à trouver un bon équilibre entre PHP, HTML et l’utilisation de la base de données.</p>
+    
+        <p>Le projet a été largement finalisé, bien qu'il puisse encore être amélioré visuellement.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et pratique du PHP <br>
+          - Utilisation d'AJAX pour des requêtes dynamiques <br>
+          - Gestion d'une base de données <br>
+          - Développement d’une interface utilisateur en HTML/CSS/JavaScript
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Matériel : PC
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        (Ajouter ici les liens vers les fichiers si nécessaire)
+        </p>
+      </div>
+    </div>
+    <!-- projet_freelance_aegix -->
+    <div class="project-card" id="projet_freelance_aegix">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Projet Freelance - Aegix</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Création d’un site vitrine pour l’entreprise Aegix en utilisant Django.</p>
+        <p>Durant les mois de Juillet et Août, j’ai reçu une proposition de travail de la part de l’entreprise Aegix. L’objectif était de développer un site vitrine sous Django.</p>
+    
+        <p>J’ai consacré le mois de juillet à l’apprentissage de Django et à la conception du site. Le design, la réalisation et le déploiement du site ont été validés à différentes étapes par mon commanditaire lors de réunions bi-hebdomadaires.</p>
+    
+        <p>Ce projet m’a permis d’apprendre à déployer un site web et à me former rapidement sur de nouvelles technologies.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage du framework Django <br>
+          - Déploiement d’un site web <br>
+          - Adaptation rapide aux directives d’un client
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : PC, Python
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet_stage_fastmage -->
+    <div class="project-card" id="projet_stage_fastmage">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Stage - Fast Mage</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Stage en entreprise de 8 à 10 semaines dans le cadre de ma formation en informatique.</p>
+        <p>Durant mon temps à l’IUT, nous devions trouver un stage dans une entreprise informatique afin de travailler sur un projet couvrant les 5 compétences de notre formation.</p>
+    
+        <p>Avec un collègue, nous avons conçu un site web de type Excel, intégrant une IA capable de générer du contenu dans les cellules via des commandes.</p>
+    
+        <p>Je me suis occupé du développement du front, du back et de la base de données, tandis que mon collègue gérait le backend, RabbitMQ et la liaison avec l’IA. Le projet était accompagné d’un schéma chaotique de suivi et d’un listing de tâches très vague.</p>
+    
+        <p>Travailler avec MongoDB m’a permis d’apprendre à utiliser une base de données NoSQL en avance sur le programme.</p>
+    
+        <p>Le projet a été réalisé en binôme. Bien qu’il n’ait pas été finalisé, les fonctionnalités principales ont été développées dans les délais.</p>
+    
+        <p>Ce stage s’est déroulé dans une entreprise de très petite taille (4 employés, pas de locaux).</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Développement full stack (Front, Back, Base de données) <br>
+          - Utilisation de MongoDB (NoSQL) <br>
+          - Travail en collaboration sur un projet informatique <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC peu performant <br>
+          - Environnement de développement : VS Code <br>
+          - Serveur LLM
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Screenshots du schéma et de l’application <br>
+          - Rapport de stage
+        </p>
+      </div>
+    </div>
+    <!-- projet_jeu_007  -->
+    <div class="project-card" id="projet_jeu_007">
+      <div class="project-title">Projet Personnel : <span class="highlight">Développement d’un Jeu - 007</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Création d'un jeu en Python inspiré d’un jeu auquel nous jouions, avec des règles étendues et de nombreuses possibilités de choix.</p>
+    
+        <p>Lors de mes années en première, j’ai commencé à apprendre à coder en Python. Très vite, j’ai voulu développer un jeu basé sur 007, mais en y intégrant nos propres règles plus complexes.</p>
+    
+        <p>J’ai dû apprendre différents types de structures de données comme les dictionnaires et les listes, et utiliser les entrées utilisateur pour gérer les choix des joueurs. Le plus grand défi a été la gestion des multiples actions possibles.</p>
+    
+        <p>J’ai organisé les actions en trois catégories : attaque, défense et utilitaire. Le système de jeu se base sur des interactions simples :
+          <ul>
+            <li>Attaque vs Attaque : la plus puissante l’emporte.</li>
+            <li>Attaque vs Utilitaire (ex : recharge) : l’attaque passe.</li>
+            <li>Attaque vs Défense : l’attaque ne fonctionne que si elle fait partie des attaques capables de dépasser la défense.</li>
+          </ul>
+        </p>
+    
+        <p>Ce projet a été réalisé seul et m’a pris environ 5 mois de travail en sessions de 2 à 6 heures, espacées selon mes envies.</p>
+    
+        <p>J’ai produit trois versions majeures, chacune subdivisée en plusieurs sous-versions :
+          <ul>
+            <li><strong>V1 :</strong> Un simple 1v1 avec 3 choix possibles.</li>
+            <li><strong>V2 :</strong> Un mode multijoueur en équipe (X vs X) avec plus de choix stratégiques.</li>
+            <li><strong>V3 :</strong> Une version en ligne utilisant un broker Mosquitto, la seule technique réseau que je connaissais à l'époque.</li>
+          </ul>
+        </p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et manipulation des types de données en Python <br>
+          - Structuration et gestion d’un projet de développement <br>
+          - Expérimentation avec les connexions en ligne via Mosquitto <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC <br>
+          - Environnement : EduPython <br>
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet_jeu_007_v2 -->
+    <div class="project-card" id="projet_jeu_007_v2">
+      <div class="project-title">Projet Personnel : <span class="highlight">Refonte du Jeu 007 en Web</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Refaire le projet du jeu 007 en version site web avec JavaScript et WebSockets pour une véritable expérience en ligne.</p>
+    
+        <p>Lors de mes années en première, j’avais déjà commencé à coder une première version de ce projet en Python. Cependant, mes connaissances limitées en API et en transfert de données entre machines m’avaient empêché de réaliser un jeu en ligne véritablement fonctionnel.</p>
+    
+        <p>Avec plus d’expérience, j’ai voulu recréer ce projet sous forme de site web, en utilisant JavaScript et WebSockets pour permettre des parties en ligne avec un vrai système de X vs X. Cette nouvelle version devait être plus complète et intégrer des mécaniques de jeu plus poussées que la précédente.</p>
+    
+        <p>J’ai appris à mieux utiliser JavaScript et à me former seul aux WebSockets. Une des plus grandes problématiques rencontrées était la gestion des choix des joueurs : certains choix pouvaient annuler d’autres actions, et l’ordre dans lequel ils étaient faits ne devait pas impacter le résultat. J’ai donc dû travailler sur un algorithme permettant de revenir en arrière sur certains effets de jeu de manière cohérente.</p>
+    
+        <p>Ce projet a été réalisé seul. Il n’a pas encore été finalisé, car la partie algorithmique a pris plus de temps que prévu. Cependant, les recherches étant terminées, il ne me reste qu'à coder l'algorithme conçu. Ce travail m’a pris environ un mois en temps libre, avec des sessions de 3 à 5 heures d’affilée, assez rapprochées grâce à ma motivation continue.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et utilisation du module WebSocket avec Node.js <br>
+          - Développement et design de site web <br>
+          - Optimisation et gestion algorithmique avancée <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC <br>
+          - Environnement : VS Code <br>
+          - Technologies : Node.js <br>
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    
+    
+    
+    
+    <!-- ========== les div projet ========== -->
+    
+    
+
+    
+    
+    
+    <br>
+    <footer class="footer-contact">
+      <div class="footer-content">
+        <p class="footer-name">Timéo Juliard</p>
+        <p class="footer-text">Merci de votre visite !</p>
+        <p class="footer-email">timeo.juliard@example.com</p>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <!-- Autres sections de la page -->
+
+
+
+</body>
+
+</html>

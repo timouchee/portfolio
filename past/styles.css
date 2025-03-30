@@ -1,0 +1,199 @@
+body {
+  background-color: #0D1B0D; /* Vert très foncé */
+  color: #D0F0C0; /* Vert clair pour le texte */
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Barre de navigation */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  background-color: #183D18; /* Vert foncé */
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #5EC2FF; /* Bleu clair */
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #8ED1FC; /* Bleu plus clair au survol */
+}
+
+/* Section hero */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #112811; /* Vert intermédiaire */
+}
+
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #5EC2FF; /* Bordure bleue pour contraster */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux blocs de passer en colonne sur petits écrans */
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(135deg, #0E2A0E, #183D18); /* Dégradé vert */
+  border-radius: 10px;
+}
+
+.skill-block {
+  background-color: rgba(30, 61, 30, 0.9); /* Fond légèrement transparent */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px; /* Largeur fixe pour uniformiser */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-block:hover {
+  transform: translateY(-5px); /* Effet de "lévitation" */
+  box-shadow: 0 0 15px #5EC2FF; /* Lueur bleue */
+}
+
+.skill-block h3 {
+  color: #5EC2FF; /* Bleu secondaire */
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.skill-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-block ul li {
+  font-size: 1em;
+  margin: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #D0F0C0; /* Vert clair */
+}
+
+.skill-block ul li::before {
+  content: "•"; /* Ajout d’un point stylé */
+  color: #5EC2FF; /* Bleu */
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.skill-block p {
+  font-size: 1em;
+  color: #D0F0C0;
+}
+
+
+/* Grille de projets */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #204D20; /* Vert soutenu */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card img {
+  max-width: 170px;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 15px #5EC2FF; /* Effet bleu au survol */
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #183D18; /* Vert foncé */
+}
+
+/* Espacement entre les sections */
+section {
+  margin: 250px 0;
+}
+
+/* Centrage */
+.center_horizontale {
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+.carrousel-container {
+  width: 80%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  transform-style: preserve-3d; /* Assure que les enfants seront disposés en 3D */
+  transition: transform 1s ease;
+  position: relative;
+}
+
+.carrousel-item {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+}
+
+.carrousel-item:nth-child(1) {
+  background-color: #e74c3c;
+}
+
+.carrousel-item:nth-child(2) {
+  background-color: #2ecc71;
+}
+
+.carrousel-item:nth-child(3) {
+  background-color: #f39c12;
+}
+
+.carrousel-item:nth-child(4) {
+  background-color: #9b59b6;
+}
+
+.carrousel-item:nth-child(5) {
+  background-color: #1abc9c;
+}
