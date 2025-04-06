@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de [Votre Nom]</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="images/random/moi.png" alt="Ram Maheshwari Logo Image" class="header__logo-img">
+        </div>
+        <span class="header__logo-sub">Juliard Timéo</span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#anvil_accueil" class="header__nav-link">Accueil</a></li>
+          <li class="header__nav-item"><a href="#anvil_bio" class="header__nav-link">Bio</a></li>
+          <li class="header__nav-item"><a href="#anvil_compétence" class="header__nav-link">Compétences</a></li>
+          <li class="header__nav-item"><a href="#anvil_timeline" class="header__nav-link">Timeline</a></li>
+          <li class="header__nav-item"><a href="#anvil_projet" class="header__nav-link">Projets</a></li>
+          <li class="header__nav-item"><a href="#anvil_footer" class="header__nav-link">Contact</a></li>
+          <li class="header__nav-item"> <a class="header__nav-link" href="#" onclick="showCV(event)">CV</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__toggle">
+        <span class="header__toggle-icon"></span>
+      </div>
+    </div>
+  </header>
+  
+  <div class="main_content">
+    <!-- Overlay pour prévisualisation -->
+    <div class="overlay" id="cvOverlay">
+      <div class="overlay-content">
+          <iframe src="CV_timeo.pdf"></iframe>
+          <div class="cv-buttons">
+              <a href="CV_timeo.pdf" download="assets/CV_timeo.pdf">
+                  <button>Télécharger mon CV</button>
+              </a>
+          </div>
+          <button class="close-btn" onclick="closeCV()">Fermer</button>
+      </div>
+  </div>
+
+
+    <section class="home-hero">
+      <div class="home-hero__content" id="anvil_accueil">
+        <h1 class="heading-primary">Hey, je suis Juliard Timéo</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Bienvenue sur mon portfolio ! Je m'appelle Timéo Juliard, étudiant à l'IUT de Bayonne et développeur full-stack avec un focus sur la gestion de projet. Toujours à la recherche de nouveaux défis, je transforme des idées en applications pratiques et élégantes. Découvre mes projets ci-dessous.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="#projects" class="btn btn--bg">Projets</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/tim%C3%A9o-juliard-0a3bb12a0/" class="home-hero__social-icon-link" rel="noreferrer"
+            target="_blank">
+            <img src="images/logo/linkedin-dark.svg" alt="Ram Maheshwari Linkedin Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+        <!-- <div class="home-hero__social">
+          <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
+            <img src="yt-dark.svg" alt="RammCodes Youtube Channel" class="home-hero__social-icon">
+          </a>
+        </div> -->
+        <div class="home-hero__social">
+          <a href="https://github.com/" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+            <img src="images/logo/github-dark.svg" alt="RammCodes Github Profile" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container_about">
+        <!-- <h2 class="section__title">À propos de moi</h2>
+        <p class="section__subtitle">
+          Vous trouverez ici plus d'informations sur moi, ce que je fais et mes compétences actuelles en matière de
+          programmation et de technologie.
+        </p> -->
+        <div class="about__content">
+          <div class="about__description" id="anvil_bio">
+            <h3>Faites connaissance avec moi !</h3>
+            <p>
+              Je suis un développeur full-stack axé sur le Frontend, créant et gérant l'interface utilisateur de sites
+              web et d'applications web qui contribuent au succès global du produit.J'ai néamoins des projet et 
+              aptitude me permettant de prendre en charge le back-end d'un projet tous en participant activement 
+              à la gestion du projet Consultez certains de mes travaux dans la section Projets.
+            </p>
+            <p>
+              J'aime également partager du contenu lié à ce que j'ai appris au fil des ans en développement web, afin
+              d'aider d'autres collegues développeurs. N'hésitez pas à me contacter ou à me suivre
+              sur mes réseaux sociaux pour obtenir des renseignement plus personalisé, je suis particulièrement actif sur discord.
+            </p>
+            <p>
+              Je suis ouvert aux opportunités d'emploi où je peux contribuer, apprendre et grandir.Néamoins je
+              recherche actuelement une alternance pour l'année 2025. Si vous avez une bonne opportunité qui 
+              correspond à mes compétences et à mon expérience ou la moindre, n'hésitez pas à me contacter.
+            </p>
+          </div>
+          <div class="about__skills" id="anvil_compétence">
+            <h3>Mes compétences</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item">HTML</li>
+              <li class="skills__list-item">CSS</li>
+              <li class="skills__list-item">C</li>
+              <li class="skills__list-item">C++</li>
+              <li class="skills__list-item">JavaScript</li>
+              <li class="skills__list-item">TypeScript</li>
+              <li class="skills__list-item">React</li>
+              <li class="skills__list-item">Redux</li>
+              <li class="skills__list-item">MySQL</li>
+              <li class="skills__list-item">MongoDB</li>
+              <li class="skills__list-item">node</li>
+              <li class="skills__list-item">deno</li>
+              <li class="skills__list-item">fresh</li>
+              <li class="skills__list-item">django</li>
+              <li class="skills__list-item">WordPress</li>
+              <li class="skills__list-item">PHP</li>
+              <li class="skills__list-item">Laravel</li>
+              <li class="skills__list-item">GIT</li>
+              <li class="skills__list-item">GitHub</li>
+              <li class="skills__list-item">Java</li>
+              <li class="skills__list-item">docker</li>
+              <li class="skills__list-item">Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- composant timeline -->
+    <h2>Parcours proffesionelle</h2>
+    <div class="timeline-container" id="anvil_timeline">
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>obtention du bacalauréat</h3>
+          <p>Juin 2022 - obtention du diplome français du bacalauréat.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>Début du BUT Info</h3>
+          <p>Septembre 2022 - Début de ma formation en BUT Informatique.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>mission freelance Axeom</h3>
+          <p>Août 2023 - mission de 1 mois sur un module de gestion d'intervention.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>Projet scolaire BonPlan&Co</h3>
+          <p>Septembre 2023 - travail en groupe sur une application web de tourisme.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>Stage Fast-Mage</h3>
+          <p>Mars 2024 - stage de 10 semaines chez Fast-Mage, herbergeur web.</p>
+        </div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-content">
+          <h3>mission freelance Aegix</h3>
+          <p>Juillet 2024 - mission de 1 mois, création d'un site vitrine du design au deploiement.</p>
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="timeline-content">
+          <h3>Alternance Terlerad</h3>
+          <p>Septembre 2024 - Alternance de 1 ans chez Telerad, service informatique.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title_center" id="anvil_projet">Bienvenue dans mon univers de projets !</h2>
+
+    <div class="container_projet_category ">
+      <div class="project-category project-pro" onclick="handleClick(this,1)" id="first_selected_category">
+        <div class="category-title">📂 Projets Professionnels</div>
+        <div class="category-description">
+          Découvrez les travaux que j’ai réalisés dans un cadre professionnel, incluant mes stages et expériences
+          réelles.
+        </div>
+      </div>
+
+      <div class="project-category project-perso " onclick="handleClick(this,2)">
+        <div class="category-title">🎮 Projets Personnels</div>
+        <div class="category-description">
+          Voici les projets que j’ai développés par passion, allant des jeux vidéo aux applications expérimentales.
+        </div>
+      </div>
+
+      <div class="project-category project-school" onclick="handleClick(this,3)">
+        <div class="category-title">📚 Projets Scolaires</div>
+        <div class="category-description">
+          Une collection des travaux et projets réalisés durant mon parcours académique, souvent en lien avec mes
+          études.
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- les 3 carrouselle -->
+    <section id="section_carrousel_1" class="section_carrouselle">
+      <!-- <div id="input_position_div_1"> -->
+        <input type="radio" name="position" class="toggle-button" data-target="projet_gestion_intervention"/>
+        <input type="radio" name="position" class="toggle-button" data-target="projet_alternance_terlard"/>
+        <input type="radio" name="position" class="toggle-button" data-target="projet_freelance_aegix"/>
+        <input type="radio" name="position" class="toggle-button" data-target="projet_stage_fastmage"/>
+        <!-- <input type="radio" name="position" /> -->
+      <!-- </div> -->
+      <main id="carousel">
+        <div class="item">
+          <img src="images/pro/intervention.png">
+          <h3 class="name">Projet Aegix</h3>
+            <p class="occupation">Gestion d'interventions</p>
+            <p class="testimonial">Développement d’un site en PHP avec AJAX pour gérer les interventions d’une entreprise.</p>
+        </div>
+        <div class="item">
+          <img src="images/pro/telerad.png">
+          <h3 class="name">Alternance Terlard</h3>
+          <p class="occupation">Expérience professionnelle</p>
+          <p class="testimonial">Projet de gestion radio en React avec passage du JSON à un vrai backend.</p>
+        </div>
+        <div class="item">
+          <img src="images/pro/aegix.png">
+          <h3 class="name">Freelance Aegix</h3>
+          <p class="occupation">Site vitrine Django</p>
+          <p class="testimonial">Création et déploiement d’un site vitrine avec Django pour un client professionnel.</p>
+        </div>
+        <div class="item">
+          <img src="images/pro/fasteo.png">
+          <h3 class="name">Stage Fast Mage</h3>
+            <p class="occupation">Développement Full Stack</p>
+            <p class="testimonial">Conception d’un tableur intelligent avec IA, MongoDB et un backend collaboratif.</p>
+          </div>
+        <!-- <div class="item">
+          <img src="moi.png">
+          <h3 class="name">Luke Maxwell</h3>
+          <p class="occupation">System Architect</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+        </div> -->
+      </main>
+    </section>
+    <section id="section_carrousel_2" class="section_carrouselle">
+      <input type="radio" name="position" class="toggle-button" data-target="projet_jeu_007"/>
+      <input type="radio" name="position" class="toggle-button" data-target="projet_jeu_007_v2"/>
+      <input type="radio" name="position" class="toggle-button" data-target="projet_goomba_mario"/>
+      <!-- <input type="radio" name="position" />
+      <input type="radio" name="position" /> -->
+      <br>
+      <main id="carousel">
+        <div class="item">
+          <img src="images/perso/gomba.png">
+          <h3 class="name">Goomba Mario</h3>
+          <p class="occupation">Jeu 2D en Python</p>
+          <p class="testimonial">Développement solo d’un jeu Pygame avec collisions complexes.</p>
+        </div>
+        <div class="item">
+          <img src="images/perso/Python_logo.png">
+          <h3 class="name">Jeu 007</h3>
+            <p class="occupation">Jeu Python au tour par tour</p>
+            <p class="testimonial">Création d’un jeu stratégique avec attaques, défenses, et une version en ligne via Mosquitto.</p>
+          </div>
+        <div class="item">
+          <img src="images/perso/node_logo.png">
+          <h3 class="name">Jeu 007 - Web</h3>
+            <p class="occupation">Reboot multijoueur en ligne</p>
+            <p class="testimonial">Refonte complète du jeu 007 en site web avec JavaScript, WebSockets et système stratégique avancé.</p>
+          </div>
+        <!-- <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Eve Smith</h3>
+          <p class="occupation">UI/UX Designer</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae?</p>
+        </div>
+        <div class="item">
+          <img src="sourire.png">
+          <h3 class="name">Luke Maxwell</h3>
+          <p class="occupation">System Architect</p>
+          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+        </div> -->
+      </main>
+    </section>
+    <section id="section_carrousel_3" class="section_carrouselle">
+      <input type="radio" name="position" class="toggle-button" data-target="projet_site_web"/>
+      <input type="radio" name="position" class="toggle-button" data-target="projet_memory"/>
+      <input type="radio" name="position" class="toggle-button" data-target="projet_odoo_fnf" />
+      <input type="radio" name="position" class="toggle-button" data-target="projet_bonplan"/>
+      <input type="radio" name="position" class="toggle-button" data-target="projet_data_analysis"/>
+      <main id="carousel">
+        <div class="item">
+          <img src="images/scolaire/BonPlannCo.JPG">
+          <h3 class="name">Application Bons Plans</h3>
+            <p class="occupation">Projet universitaire collaboratif</p>
+            <p class="testimonial">Développement d’une appli web de bons plans avec algorithme de recommandation, gestion agile, et documentation complète.</p>
+          </div>
+        <div class="item">
+          <img src="images/scolaire/memory.jpg">
+          <h3 class="name">Memory en C++</h3>
+            <p class="occupation">Projet universitaire en équipe</p>
+            <p class="testimonial">Création d’un jeu Memory via CMD en C++, avec gestion d’algorithmes, de projet, et collaboration sur un mois et demi.</p>
+          </div>
+        <div class="item">
+          <img src="images/scolaire/occitanie.jpg">
+          <h3 class="name">Site Web Universitaire</h3>
+            <p class="occupation">Projet web en groupe (HTML/CSS)</p>
+            <p class="testimonial">Conception d’un site web complet avec maquettes, charte graphique et développement collaboratif en HTML/CSS avec un fichier CSS commun.</p>
+          </div>
+        <div class="item">
+          <img src="images/scolaire/odoo_wordpress.png">
+            <h3 class="name">Module Odoo - FNF</h3>
+            <p class="occupation">Dév. avancé & intégration WordPress</p>
+            <p class="testimonial">Création d’un module Odoo pour la gestion musicale, relié à WordPress, inspiré de Friday Night Funkin’.</p>
+          </div>
+        <div class="item" >
+          <img src="images/scolaire/spyder_logo.png">
+            <h3 class="name">Analyse de Données - Python</h3>
+            <p class="occupation">Traitement & visualisation CSV</p>
+            <p class="testimonial">Programmes en Python pour analyser et afficher des données via des dataframes, réalisés en binôme.</p>
+          </div>
+      </main>
+    </section>
+    <br>
+
+    <!-- <div>
+      <h2>Entreprtise</h2>
+      <button class="toggle-button" data-target="projet_gestion_intervention">projet_gestion_intervention</button>
+      <button class="toggle-button" data-target="projet_alternance_terlard">projet_alternance_terlard</button>
+      <button class="toggle-button" data-target="projet_freelance_aegix">projet_freelance_aegix</button>
+      <button class="toggle-button" data-target="projet_stage_fastmage">projet_stage_fastmage</button>
+      
+    </div>
+    <div>
+      <h2>Perso</h2>
+      <button class="toggle-button" data-target="projet_jeu_007">projet_jeu_007</button>
+      <button class="toggle-button" data-target="projet_jeu_007_v2">projet_jeu_007_v2</button>
+      <button class="toggle-button" data-target="projet_goomba_mario">projet_goomba_mario</button>
+    </div>
+    <div>
+      <h2>Scolaire</h2>
+      <button class="toggle-button" data-target="projet_site_web">projet_site_web</button>
+      <button class="toggle-button" data-target="projet_memory">projet_memory</button>
+      <button class="toggle-button" data-target="projet_odoo_fnf">projet_odoo_fnf</button>
+      <button class="toggle-button" data-target="projet_bonplan">projet_bonplan</button>
+      <button class="toggle-button" data-target="projet_data_analysis">projet_data_analysis</button>
+    </div>  -->
+
+
+    <!-- ========== les div projet ========== -->
+    
+     <!-- projet alternance  -->
+    <div class="project-card" id="projet_alternance_terlard">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Alternance Terlard</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Retour sur mon alternance durant ma dernière année de BUT informatique à Anglet.</p>
+        <p>J'ai dû chercher une alternance ou me résoudre à faire un stage. Ayant trouvé une alternance, voici un état des lieux de son déroulement.</p>
+        
+        <p>Les premières missions qui m’ont été confiées incluaient une formation aux technologies que j’allais utiliser : React, Redux et Tailwind CSS. J'ai également eu une journée pour lire la documentation des machines et explorer le code existant.</p>
+    
+        <p>Mon travail principal a concerné un projet de gestion de radio. Il s'agissait de reprendre le travail d’un autre développeur qui avait conçu un site permettant de gérer une radio, mais sans backend réel, tout passant par un fichier JSON. Mon rôle a été d'ajouter des fonctionnalités et de faire en sorte que les requêtes ne passent plus par ce fichier JSON, mais directement par des demandes envoyées à la radio (extraction des infos de configuration, requêtes de reboot, etc.).</p>
+    
+        <p>Le projet principal est maintenant en grande partie terminé et je suis confiant pour la suite.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage de React, Redux et Tailwind CSS <br>
+          - Lecture et compréhension de code existant <br>
+          - Gestion de version avec GitHub <br>
+          - Développement de fonctionnalités backend pour la radio
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Matériel : PC et équipement radio
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet gestion d'intervention -->
+    <div class="project-card" id="projet_gestion_intervention">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Projet Client - Gestion d'Intervention</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Développement d’un site web de gestion d’interventions pour l’entreprise Aegix.</p>
+        
+        <p>Pendant les vacances de juillet et août, l’entreprise Aegix m’a contacté pour effectuer un stage d’un mois au sein de son service informatique. Ma mission était de créer un gestionnaire d’intervention en HTML, CSS, JavaScript et principalement PHP, tout en intégrant une base de données et en utilisant des requêtes AJAX.</p>
+    
+        <p>Avant de commencer, j’ai dû me former sur les bases du PHP et comprendre comment envoyer des requêtes sans recharger la page grâce à AJAX. Après quelques difficultés initiales, j’ai réussi à trouver un bon équilibre entre PHP, HTML et l’utilisation de la base de données.</p>
+    
+        <p>Le projet a été largement finalisé, bien qu'il puisse encore être amélioré visuellement.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et pratique du PHP <br>
+          - Utilisation d'AJAX pour des requêtes dynamiques <br>
+          - Gestion d'une base de données <br>
+          - Développement d’une interface utilisateur en HTML/CSS/JavaScript
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Matériel : PC
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        (Ajouter ici les liens vers les fichiers si nécessaire)
+        </p>
+      </div>
+    </div>
+    <!-- projet_freelance_aegix -->
+    <div class="project-card" id="projet_freelance_aegix">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Projet Freelance - Aegix</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Création d’un site vitrine pour l’entreprise Aegix en utilisant Django.</p>
+        <p>Durant les mois de Juillet et Août, j’ai reçu une proposition de travail de la part de l’entreprise Aegix. L’objectif était de développer un site vitrine sous Django.</p>
+    
+        <p>J’ai consacré le mois de juillet à l’apprentissage de Django et à la conception du site. Le design, la réalisation et le déploiement du site ont été validés à différentes étapes par mon commanditaire lors de réunions bi-hebdomadaires.</p>
+    
+        <p>Ce projet m’a permis d’apprendre à déployer un site web et à me former rapidement sur de nouvelles technologies.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage du framework Django <br>
+          - Déploiement d’un site web <br>
+          - Adaptation rapide aux directives d’un client
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : PC, Python
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet_stage_fastmage -->
+    <div class="project-card" id="projet_stage_fastmage">
+      <div class="project-title">Expérience Professionnelle : <span class="highlight">Stage - Fast Mage</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Stage en entreprise de 8 à 10 semaines dans le cadre de ma formation en informatique.</p>
+        <p>Durant mon temps à l’IUT, nous devions trouver un stage dans une entreprise informatique afin de travailler sur un projet couvrant les 5 compétences de notre formation.</p>
+    
+        <p>Avec un collègue, nous avons conçu un site web de type Excel, intégrant une IA capable de générer du contenu dans les cellules via des commandes.</p>
+    
+        <p>Je me suis occupé du développement du front, du back et de la base de données, tandis que mon collègue gérait le backend, RabbitMQ et la liaison avec l’IA. Le projet était accompagné d’un schéma chaotique de suivi et d’un listing de tâches très vague.</p>
+    
+        <p>Travailler avec MongoDB m’a permis d’apprendre à utiliser une base de données NoSQL en avance sur le programme.</p>
+    
+        <p>Le projet a été réalisé en binôme. Bien qu’il n’ait pas été finalisé, les fonctionnalités principales ont été développées dans les délais.</p>
+    
+        <p>Ce stage s’est déroulé dans une entreprise de très petite taille (4 employés, pas de locaux).</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Développement full stack (Front, Back, Base de données) <br>
+          - Utilisation de MongoDB (NoSQL) <br>
+          - Travail en collaboration sur un projet informatique <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC peu performant <br>
+          - Environnement de développement : VS Code <br>
+          - Serveur LLM
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Screenshots du schéma et de l’application <br>
+          - Rapport de stage
+        </p>
+      </div>
+    </div>
+    <!-- projet_jeu_007  -->
+    <div class="project-card" id="projet_jeu_007">
+      <div class="project-title">Projet Personnel : <span class="highlight">Développement d’un Jeu - 007</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Création d'un jeu en Python inspiré d’un jeu auquel nous jouions, avec des règles étendues et de nombreuses possibilités de choix.</p>
+    
+        <p>Lors de mes années en première, j’ai commencé à apprendre à coder en Python. Très vite, j’ai voulu développer un jeu basé sur 007, mais en y intégrant nos propres règles plus complexes.</p>
+    
+        <p>J’ai dû apprendre différents types de structures de données comme les dictionnaires et les listes, et utiliser les entrées utilisateur pour gérer les choix des joueurs. Le plus grand défi a été la gestion des multiples actions possibles.</p>
+    
+        <p>J’ai organisé les actions en trois catégories : attaque, défense et utilitaire. Le système de jeu se base sur des interactions simples :
+          <ul>
+            <li>Attaque vs Attaque : la plus puissante l’emporte.</li>
+            <li>Attaque vs Utilitaire (ex : recharge) : l’attaque passe.</li>
+            <li>Attaque vs Défense : l’attaque ne fonctionne que si elle fait partie des attaques capables de dépasser la défense.</li>
+          </ul>
+        </p>
+    
+        <p>Ce projet a été réalisé seul et m’a pris environ 5 mois de travail en sessions de 2 à 6 heures, espacées selon mes envies.</p>
+    
+        <p>J’ai produit trois versions majeures, chacune subdivisée en plusieurs sous-versions :
+          <ul>
+            <li><strong>V1 :</strong> Un simple 1v1 avec 3 choix possibles.</li>
+            <li><strong>V2 :</strong> Un mode multijoueur en équipe (X vs X) avec plus de choix stratégiques.</li>
+            <li><strong>V3 :</strong> Une version en ligne utilisant un broker Mosquitto, la seule technique réseau que je connaissais à l'époque.</li>
+          </ul>
+        </p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et manipulation des types de données en Python <br>
+          - Structuration et gestion d’un projet de développement <br>
+          - Expérimentation avec les connexions en ligne via Mosquitto <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC <br>
+          - Environnement : EduPython <br>
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet_jeu_007_v2 -->
+    <div class="project-card" id="projet_jeu_007_v2">
+      <div class="project-title">Projet Personnel : <span class="highlight">Refonte du Jeu 007 en Web</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Refaire le projet du jeu 007 en version site web avec JavaScript et WebSockets pour une véritable expérience en ligne.</p>
+    
+        <p>Lors de mes années en première, j’avais déjà commencé à coder une première version de ce projet en Python. Cependant, mes connaissances limitées en API et en transfert de données entre machines m’avaient empêché de réaliser un jeu en ligne véritablement fonctionnel.</p>
+    
+        <p>Avec plus d’expérience, j’ai voulu recréer ce projet sous forme de site web, en utilisant JavaScript et WebSockets pour permettre des parties en ligne avec un vrai système de X vs X. Cette nouvelle version devait être plus complète et intégrer des mécaniques de jeu plus poussées que la précédente.</p>
+    
+        <p>J’ai appris à mieux utiliser JavaScript et à me former seul aux WebSockets. Une des plus grandes problématiques rencontrées était la gestion des choix des joueurs : certains choix pouvaient annuler d’autres actions, et l’ordre dans lequel ils étaient faits ne devait pas impacter le résultat. J’ai donc dû travailler sur un algorithme permettant de revenir en arrière sur certains effets de jeu de manière cohérente.</p>
+    
+        <p>Ce projet a été réalisé seul. Il n’a pas encore été finalisé, car la partie algorithmique a pris plus de temps que prévu. Cependant, les recherches étant terminées, il ne me reste qu'à coder l'algorithme conçu. Ce travail m’a pris environ un mois en temps libre, avec des sessions de 3 à 5 heures d’affilée, assez rapprochées grâce à ma motivation continue.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Apprentissage et utilisation du module WebSocket avec Node.js <br>
+          - Développement et design de site web <br>
+          - Optimisation et gestion algorithmique avancée <br>
+        </p>
+    
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Matériel : PC <br>
+          - Environnement : VS Code <br>
+          - Technologies : Node.js <br>
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+        Ø
+        </p>
+      </div>
+    </div>
+    <!-- projet_goomba_mario -->
+    <div class="project-card" id="projet_goomba_mario">
+      <div class="project-title">Projet Personnel : <span class="highlight">Goomba Mario</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : 02/02/2023</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Durant mes longues heures à ne rien faire chez moi, j’ai imaginé plusieurs concepts de jeux. L’un d’eux consistait à incarner un personnage en 2D devant aller d’un point A à un point C sans toucher un seul objet de la zone intermédiaire B. Le but était de créer des niveaux avec une difficulté croissante selon les mouvements des objets.</p>
+        <p>Lors de ma Terminale, le projet de fin d’année était de concevoir une application. J’ai donc choisi de développer plus en profondeur mon jeu et de le coder en Python pour le rendre en fin d’année. L’objectif était d’afficher une fenêtre graphique, d’y faire apparaître des sprites, de gérer leurs mouvements et rotations, ainsi que de travailler sur la gestion des collisions, en particulier les collisions complexes.</p>
+        <p>Ce projet devait être réalisé en binôme, mais personne ne souhaitant se joindre à moi, je l’ai réalisé seul. À part quelques problèmes liés aux déformations causées par les rotations (qui m’ont donné du fil à retordre), le développement s’est bien déroulé. Le projet a été réalisé avec la bibliothèque Pygame.</p>
+        <p>Le projet a été rendu dans les temps, bien que j’aie rencontré des difficultés jusqu’à la fin. Je suis néanmoins satisfait du résultat et pourrai réutiliser le moteur graphique de ce jeu pour d’autres variations.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Recherche approfondie pour résoudre des problèmes techniques <br>
+          - Gestion des sprites et animations en Pygame <br>
+          - Implémentation de collisions complexes
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : EduPython <br>
+          - Matériel : PC
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Le fichier .py (trop volumineux et sans emplacement fixe)
+        </p>
+      </div>
+    </div>
+    <!-- projet_site_web -->
+    <div class="project-card" id="projet_site_web">
+      <div class="project-title">Projet Universitaire : <span class="highlight">Conception d’un Site Web</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : --/--/----</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Dans le cadre de mon B.U.T Informatique à l’I.U.T de Bayonne, j’ai dû réaliser plusieurs S.A.E (Situations d’Apprentissage et d’Évaluation), qui sont des projets de différentes natures. L’un d’eux consistait à concevoir un site web en groupe de trois, en respectant toutes les étapes du développement : scénarisation, création d’une charte graphique, conception de maquettes en fil de fer, et enfin, développement. Une des contraintes principales était l’utilisation d’un unique fichier CSS commun à l’ensemble du site.</p>
+
+        <p>Nous avons d’abord travaillé ensemble pour rédiger un document regroupant les éléments clés du site, sa charte graphique et sa police d’écriture. Ensuite, nous avons conçu collectivement une maquette en fil de fer des éléments communs à nos différentes parties du site. Après cette étape, chacun a élaboré de son côté un scénario possible pour le site ainsi qu’une maquette de sa partie respective. Enfin, nous avons développé nos sections de manière indépendante après avoir créé ensemble la structure de base du site.</p>
+
+        <p>Le projet a été réalisé avec un ami proche et une connaissance. Le déroulement a été compliqué par notre professeur, dont les consignes et les exemples étaient souvent contradictoires, ce qui a rendu l’organisation difficile. Malgré cela, l’ambiance au sein du groupe est restée correcte.</p>
+
+        <p>Le projet a été rendu en trois étapes : 
+        <ul>
+          <li>La première correspondait à la livraison des chartes graphiques et des maquettes communes.</li>
+          <li>La seconde portait sur la rédaction des scénarios.</li>
+          <li>Enfin, la troisième consistait en la livraison du site web finalisé.</li>
+        </ul>
+        Malheureusement, un manque de rigueur dans certaines réalisations nous a empêchés de respecter pleinement les attentes. Je garde un souvenir mitigé de ce projet, principalement à cause des directives contradictoires du professeur. Cela m’a appris qu’il arrive parfois que ne rien faire soit plus efficace que de suivre des consignes incohérentes.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Organisation et gestion d’un projet en groupe <br>
+          - Création de chartes graphiques et de maquettes en fil de fer <br>
+          - Développement web en HTML/CSS avec un fichier CSS commun <br>
+          - Capacité à prendre du recul face à des directives peu claires
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Outils de collaboration : Google Docs, Google Sheets <br>
+          - Outils de conception : Balsamiq, papier, imprimante
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Maquette en fil de fer (PDF) <br>
+          - Code source du site (si disponible)
+        </p>
+      </div>
+    </div>
+    <!-- projet_memory -->
+    <div class="project-card" id="projet_memory">
+      <div class="project-title">Projet Universitaire : <span class="highlight">Développement d’un Memory en C++</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : --/--/----</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Dans le cadre de mon B.U.T Informatique à l’I.U.T de Bayonne, j’ai dû réaliser plusieurs S.A.E (Situations d’Apprentissage et d’Évaluation), qui sont des projets de différentes natures. L’un d’eux consistait à développer une application en C++ sous la forme d’un jeu de mémoire : le Memory.</p>
+
+        <p>Le projet devait être réalisé en un mois et demi en équipe de trois. Memory est un jeu en ligne de commande (CMD) où le joueur doit retrouver des paires de cartes cachées sur une grille. Un menu lui permet de choisir la taille du jeu et le nombre de tours maximum avant la défaite. À chaque tour, il sélectionne deux cartes : si elles correspondent, il gagne une paire, sinon elles sont retournées. Le but est de vider la grille avant d’atteindre la limite de tours.</p>
+
+        <p>Nous avons dû concevoir ce projet de A à Z en passant par plusieurs étapes : 
+        <ul>
+          <li>Compréhension et analyse de la consigne</li>
+          <li>Élaboration de maquettes graphiques des spécifications externes</li>
+          <li>Création d’un algorithme de jeu</li>
+          <li>Développement du code en C++</li>
+          <li>Mise au point et rédaction d’un compte rendu final</li>
+        </ul>
+        </p>
+
+        <p>Ce projet a été réalisé avec un ami et une connaissance. La répartition des tâches a cependant été mal gérée, ce qui a entraîné des retards et des erreurs de compréhension de la consigne, obligeant à recommencer une partie du travail. Malgré ces difficultés, l’ambiance au sein de l’équipe est restée bonne.</p>
+
+        <p>Le projet a été rendu dans les temps, mais le résultat final ne m’a pas pleinement satisfait. J’aurais aimé un rendu plus soigné et mieux structuré.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Travail en équipe sur un projet technique <br>
+          - Développement en C++ <br>
+          - Conception et élaboration d’algorithmes <br>
+          - Gestion et conduite d’un projet <br>
+          - Approche fonctionnelle et mise au point d’un programme
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Outils de conception : Paint, papier, imprimante <br>
+          - Outil de gestion de projet : Tabula Rasa
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Code source du jeu (si disponible) <br>
+          - Maquettes des spécifications externes (PDF)
+        </p>
+      </div>
+    </div>
+    <!-- projet_odoo_fnf -->
+    <div class="project-card" id="projet_odoo_fnf">
+      <div class="project-title">Projet Universitaire : <span class="highlight">Développement d’un Module Odoo pour la Gestion Musicale</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : --/--/----</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Durant mon B.U.T Informatique à l’I.U.T de Bayonne, j’ai dû réaliser un projet dans le cadre d’un cours portant sur l’acquisition de compétences. L’objectif était de concevoir, en autonomie et sur une durée de six séances, un module Odoo dédié à la gestion musicale, en lien avec un mode du jeu <em>Friday Night Funkin’</em> (FNF).</p>
+
+        <p>Le projet consistait à développer un module Odoo avancé et à l’intégrer avec une interface graphique sous WordPress, sans l’aide de tutoriels. Bien que la consigne initiale paraissait relativement simple, les explications supplémentaires du professeur ont révélé une complexité bien plus grande qu’anticipé. Face à cela, nous avons décidé d’aller bien au-delà des exigences minimales du projet, en ajoutant notamment la possibilité de modifier directement les données d’Odoo via WordPress, tout en intégrant des feedbacks précis.</p>
+
+        <p>Ce projet a demandé un unique rendu final. Je suis globalement satisfait du résultat obtenu, bien que je pense que le barème de notation comportait certaines incohérences.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Développement et intégration d’un module Odoo avancé <br>
+          - Connexion entre Odoo et WordPress <br>
+          - Gestion des interactions entre une base de données et une interface utilisateur <br>
+          - Approche autonome du développement d’applications complexes
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : Odoo <br>
+          - Outils web : WordPress <br>
+          - Langages de programmation : JavaScript, PHP
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Code source du module Odoo (si disponible) <br>
+          - Documentation du projet (PDF)
+        </p>
+      </div>
+    </div>
+    <!-- projet_bonplan -->
+    <div class="project-card" id="projet_bonplan">
+      <div class="project-title">Projet Universitaire : <span class="highlight">Développement d’une Application Web de Recommandation</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : --/--/----</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Durant mon B.U.T Informatique à l’I.U.T de Bayonne, j’ai participé à un projet encadré dans le cadre des S.A.E (Situations d’Apprentissage et d’Évaluation). Réalisé en binôme sur une durée de six mois, ce projet s’inscrivait dans la continuité des travaux amorcés lors des S.A.E S2.05 et S2.06 de l’année précédente. Cette année, l’objectif était de passer à la phase de développement, en mettant en place une gestion de projet structurée.</p>
+
+        <p>Le projet consistait à concevoir une application web permettant aux étudiants du BAB de découvrir des <em>“bons plans”</em> adaptés à leurs goûts. Le cœur de l’application reposait sur un algorithme de recommandation capable de classer les utilisateurs dans différentes catégories et de leur proposer des offres susceptibles de leur plaire.</p>
+
+        <p>Le développement de l’application a été réalisé en HTML, CSS et JavaScript. Une grande partie du projet a été dédiée à la conception et à l’optimisation de l’algorithme de recommandation. En parallèle, une gestion de projet agile a été mise en place, bien que sa mise en œuvre ait été progressive et expérimentale. Plusieurs livrables ont été produits tout au long du projet : documentation fonctionnelle et technique, cahier des charges, rétrospectives de sprint, ainsi que des schémas conceptuels de base de données.</p>
+
+        <p>Le projet a nécessité de nombreuses itérations et ajustements, entraînant des changements fréquents dans la répartition des tâches afin de s’adapter aux nouvelles exigences. Un travail conséquent a également été réalisé sur la gestion des versions via GitHub, ce qui m’a permis d’approfondir mes connaissances sur cet outil. Bien que l’évaluation par les professeurs n’ait pas été particulièrement élogieuse, je suis personnellement satisfait du travail accompli.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Travail en équipe <br>
+          - Conduite et gestion de projet <br>
+          - Élaboration et rédaction de documentation technique <br>
+          - Conception et mise en place d’un algorithme de recommandation <br>
+          - Réalisation de diagrammes UML et de schémas conceptuels de bases de données <br>
+          - Utilisation avancée de GitHub pour le versionnement
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : VS Code <br>
+          - Outils collaboratifs : Google Docs, Google Drive, Google Forms, Canva <br>
+          - Gestion de version : GitHub
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Code source du projet (si disponible) <br>
+          - Documentation fonctionnelle et technique (PDF) <br>
+          - Présentation du projet devant le jury (diaporama)
+        </p>
+      </div>
+    </div>
+    <!-- projet_data_analysis -->
+    <div class="project-card" id="projet_data_analysis">
+      <div class="project-title">Projet Universitaire : <span class="highlight">Analyse et Visualisation de Données avec Python</span></div>
+      <div class="project-meta">Réalisé par : Timéo Julliard | Date : --/--/----</div>
+    
+      <div class="project-content">
+        <p><strong>Objectif :</strong> Durant mon B.U.T Informatique à l’I.U.T de Bayonne, j’ai participé à un projet encadré dans le cadre des S.A.E (Situations d’Apprentissage et d’Évaluation). Réalisé en binôme sur une durée de trois mois, ce projet consistait à développer plusieurs petits programmes en Python pour traiter et analyser des bases de données sous forme de <em>dataframes</em>.</p>
+
+        <p>Le projet était structuré en plusieurs phases :</p>
+        <ul>
+          <li>Lecture et traitement des données à partir de fichiers CSV</li>
+          <li>Recherche et analyse de chemins dans le <em>dataframe</em> généré</li>
+          <li>Affichage des chemins à l’aide d’une bibliothèque graphique</li>
+          <li>Une quatrième partie du projet reste encore à réaliser</li>
+        </ul>
+
+        <p>Ce projet a été développé entièrement <em>from scratch</em>, en passant par toutes les étapes clés : compréhension de la consigne, élaboration des solutions algorithmiques, développement du code et documentation (commentaires et structuration du code pour une meilleure lisibilité).</p>
+
+        <p>Travaillant en collaboration avec une connaissance, nous avons maintenu une répartition des tâches équilibrée, chacun se concentrant sur une partie spécifique du projet en fonction de ses compétences en optimisation. Cette approche a permis de mener à bien le projet sans nécessiter de fusion complexe entre différentes parties du code.</p>
+
+        <p>À la fin du projet, nous avons remis plusieurs livrables qui répondaient aux attentes, y compris aux questions secondaires posées. L’ensemble du travail a été rendu dans les délais impartis.</p>
+      </div>
+    
+      <div class="project-resources">
+        <p><strong>Compétences acquises :</strong> <br>
+          - Travail en équipe <br>
+          - Développement en Python <br>
+          - Gestion et manipulation de bases de données <br>
+          - Analyse et traitement de données avec <em>dataframes</em> <br>
+          - Conception et implémentation d’algorithmes <br>
+          - Documentation et structuration de code
+        </p>
+        
+        <p><strong>Ressources utilisées :</strong> <br>
+          - Environnement de développement : Spyder <br>
+          - Outils de visualisation : Paint <br>
+          - Bases de données et fichiers CSV
+        </p>
+      </div>
+    
+      <div class="project-attachments">
+        <p><strong>Fichiers joints :</strong> <br>
+          - Code source du projet (Python) <br>
+          - Documentation technique et fonctionnelle (PDF) <br>
+          - Captures d’écran des visualisations générées
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+    
+    
+    
+    
+    
+    <!-- ========== les div projet ========== -->
+    
+    
+
+    
+    
+    
+    <br>
+    <!-- <footer class="footer-contact" id="anvil_footer">
+      <div class="footer-content">
+        <p class="footer-name">Timéo Juliard</p>
+        <p class="footer-text">Merci de votre visite !</p>
+        <p class="footer-email">timeo.juliard@example.com</p>
+      </div>
+    </footer> -->
+    <footer class="footer-contact" id="anvil_footer">
+      <div class="footer-content">
+        <p class="footer-name">Timéo Juliard</p>
+        <p class="footer-text">Merci de votre visite !</p>
+        <p class="footer-email">timeo.juliard@example.com</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+        <p id="form-message" style="color: white; display: none;">Message envoyé !</p>
+      </form>
+    </footer>
+
+
+  </div>
+
+  <!-- Autres sections de la page -->
+<!-- 
+  trouver des images
+  relier defilement avec bouton
+  deploiement
+-->
+
+
+</body>
+
+</html>
