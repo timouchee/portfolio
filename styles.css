@@ -197,7 +197,7 @@ body {
     padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
-    padding-top: 20%;
+    /* padding-top: 20%; */
     background: #f5f5f5;
   }
   
@@ -918,3 +918,12 @@ iframe {
     cursor: pointer;
     margin-top: 10px;
 }
+
+.top_of_page
+{
+    /* position: relative;
+    top: 0; */
+    margin-top: 8%;
+}
+
+
